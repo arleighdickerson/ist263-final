@@ -1,0 +1,18 @@
+/**
+ * @author: Arleigh Dickerson
+ */
+
+.alert-theme {
+	background-color: #00b3fe;
+	border-color: #384452;
+	color: #fff;
+	opacity: 0.6;
+}
+
+#headerwrap .jumbotron h1 {
+	color: inherit;
+}
+
+#contactwrap {
+	background-position: center bottom;
+}

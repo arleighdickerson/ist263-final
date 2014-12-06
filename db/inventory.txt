@@ -1,0 +1,7 @@
+[
+    {
+        "locationId":1,
+        "itemId":1,
+        "quantity":10
+    }
+]
