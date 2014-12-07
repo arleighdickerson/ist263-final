@@ -5,3 +5,5 @@
  * 
  */
 require_once ("util/bootstrap.php");
+
+Controller::run ();

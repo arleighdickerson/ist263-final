@@ -1,0 +1,46 @@
+[
+    {
+        "label":"Milk",
+        "price":1.00
+    },
+    {
+        "label":"Cheese",
+        "price":5.00
+    },
+    {
+        "label":"Eggs",
+        "price":5.00
+    },
+    {
+        "label":"Snickers",
+        "price":5.00
+    },
+    {
+        "label":"Waffles",
+        "price":5.00
+    },
+    {
+        "label":"Leaf blower",
+        "price":35.00
+    },
+    {
+        "label":"Booze",
+        "price":8.00
+    },
+    {
+        "label":"Windshield Fluid",
+        "price":9.50
+    },
+    {
+        "label":"Soda",
+        "price":1.00
+    },
+    {
+        "label":"Orange Juice",
+        "price":1.50
+    },
+    {
+        "label":"Soup",
+        "price":1.25
+    }
+]

@@ -5,4 +5,16 @@ class Item extends Model {
 				'itemId' => $this->id 
 		] );
 	}
+	public function getLocations() {
+		return array_map ( function ($inv) {
+			$loc = $inv->getLocation ();
+			$loc ["quantity"] = $inv->quantity;
+			return $loc;
+		}, $this->getInventory () );
+	}
+	public function flatten() {
+		return array_merge ( ( array ) $this, [ 
+				'locations' => $this->getLocations () 
+		] );
+	}
 }

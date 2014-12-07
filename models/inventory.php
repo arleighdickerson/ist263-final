@@ -1,9 +1,9 @@
 <?php
 class Inventory extends Model {
 	public function getItem() {
-		return Item::findOne ( $this->itemId );
+		return Item::findOne ($this->itemId);
 	}
 	public function getLocation() {
-		return Location::findOne ( $this->locationId );
+		return Location::findOne ($this->locationId);
 	}
 }

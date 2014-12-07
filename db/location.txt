@@ -1,9 +1,0 @@
-[
-    {
-        "id":1,
-        "label":"Main location",
-        "street":"123 Awesome St.",
-        "city":"Huntington",
-        "state":"WV"
-    }
-]

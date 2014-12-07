@@ -1,0 +1,46 @@
+[
+    {
+        "label":"Main location",
+        "street":"123 Awesome St.",
+        "city":"Huntington",
+        "state":"WV",
+        "gasoline":{
+        	"unleaded":2.38,
+        	"mid":2.69,
+        	"premium":2.99
+        }
+    },
+    {
+        "label":"New Location",
+        "street":"456 New Dr.",
+        "city":"Barboursville",
+        "state":"WV",
+        "gasoline":{
+        	"unleaded":2.40,
+        	"mid":2.71,
+        	"premium":3.01
+        }
+    },
+    {
+        "label":"Shady Location",
+        "street":"234 Scandalous Ct.",
+        "city":"West Huntington",
+        "state":"WV",
+        "gasoline":{
+        	"unleaded":2.42,
+        	"mid":2.74,
+        	"premium":3.03
+        }
+    },
+    {
+        "label":"Marshall Location",
+        "street":"Two John Marshall Dr.",
+        "city":"Huntington",
+        "state":"WV",
+        "gasoline":{
+        	"unleaded":2.53,
+        	"mid":2.72,
+        	"premium":3.21
+        }
+    }
+]

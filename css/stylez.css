@@ -9,6 +9,10 @@
 	opacity: 0.6;
 }
 
+.progress-bar-theme {
+	background-color:#00b3fe;
+}
+
 #headerwrap .jumbotron h1 {
 	color: inherit;
 }

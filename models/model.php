@@ -2,17 +2,13 @@
 /**
  * @author Arleigh Dickerson
  * 
- * A model loaded from a flat file data source implementing JsonSerializable so 
- * we can send it over the wire on ajax calls.
+ * A model loaded from a flat file data source.
  *
  */
-abstract class Model extends ArrayObject implements JsonSerializable {
+abstract class Model extends ArrayObject {
 	use magic;
 	function __construct($params = []) {
 		parent::__construct ( $params );
-	}
-	public function jsonSerialize() {
-		return ( array ) $this;
 	}
 	public static function find($filter = []) {
 		return array_filter ( static::load ( strtolower ( static::class ) ), function ($model) use($filter) {
@@ -25,7 +21,6 @@ abstract class Model extends ArrayObject implements JsonSerializable {
 		] ) as $model ) {
 			return $model;
 		}
-		return null;
 	}
 	protected function matches($filter) {
 		foreach ( $filter as $key => $value ) {
@@ -35,15 +30,19 @@ abstract class Model extends ArrayObject implements JsonSerializable {
 		}
 		return true;
 	}
-	protected static function fileName($type) {
-		return "db/" . strtolower ( $type ) . ".txt";
+	protected static function fileName() {
+		return "db/" . strtolower ( static::class ) . ".json";
 	}
-	protected static function load($type) {
+	protected static function load() {
 		$refl = new ReflectionClass ( static::class );
-		return array_map ( function ($array) use($refl) {
+		$models = array_map ( function ($array) use($refl) {
 			return $refl->newInstanceArgs ( [ 
 					'params' => $array 
 			] );
-		}, json_decode ( file_get_contents ( static::fileName ( $type ) ), true ) );
+		}, json_decode ( file_get_contents ( static::fileName (), (static::class) ), true ) );
+		foreach ( $models as $key => $value ) {
+			$value->id = $key;
+		}
+		return $models;
 	}
 }

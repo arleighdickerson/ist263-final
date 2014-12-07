@@ -4,7 +4,6 @@ class View extends ArrayObject {
 	function __construct($params = []) {
 		parent::__construct ( $params );
 	}
-	
 	public function renderPartial($templateName) {
 		$template = "views/" . $templateName . ".php";
 		if (file_exists ( $template )) {
