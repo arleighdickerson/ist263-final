@@ -3,9 +3,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4">
-				<h4>About</h4>
+				<h4>
+					<a href="index.php?r=front/about">About</a>
+				</h4>
 				<div class="hline-w"></div>
-				<p>Quick and Dirty service stations are independently owned and operated. If anything goes wrong, don't blame us!</p>
+				<p>Quick and dirty operates throughout the tristate. Our service stations are independently owned and operated. If anything goes wrong, don't blame us!</p>
 			</div>
 			<div class="col-lg-4">
 				<h4>Social</h4>
@@ -24,6 +26,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="row">
+			<p class="centered">&copy; <script>document.write(new Date().getFullYear())</script></p>
 		</div>
 	</div>
 </div>

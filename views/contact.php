@@ -20,9 +20,9 @@
 <div class="container mtb">
 	<div class="row">
 		<div class="col-lg-8">
-			<h4>Just Get In Touch!</h4>
+			<h4>Talk to Anyone</h4>
 			<div class="hline"></div>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<p>At quick and dirty service stations, we take our customers seriously. Please leave us a message and we will get back to you in a timely fashion.</p>
 			<form name="contact" role="form" method="post" data-toggle="validator">
 				<div class="form-group">
 					<label for="inputName">Your Name</label> <input type="text" class="form-control" id="inputName" name="<?= FrontController::PERSON_NAME; ?>" required />
@@ -53,8 +53,6 @@
 			<p>
 				Email: <a href="mailto:sayhello@arleighdickerson.us"> sayhello@arleighdickerson.us</a><br /> Tel: +1 999-999-9999
 			</p>
-			<p>Bacon ipsum dolor amet ham pork loin porchetta, cupim landjaeger kevin flank beef ribs kielbasa bacon beef. Picanha turkey landjaeger chuck, pancetta tail ham hock meatball kielbasa doner prosciutto turducken. Pastrami short ribs kielbasa chicken tri-tip shank turducken bresaola tenderloin
-				swine ground round drumstick leberkas cupim. Pork belly boudin beef ribs strip steak fatback. Chicken pork chop pork loin, jerky alcatra hamburger pig.</p>
 		</div>
 	</div>
 </div>

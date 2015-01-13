@@ -67,9 +67,13 @@
 		a.innerHTML = "Closest Location";
 		header.appendChild(a);
 
-		var html = model.street + "<br /> " + model.city + " " + model.state
-				+ "<br /> ";
-		p.innerHTML = html;
+		var a = document.createElement("a");
+		a.setAttribute("href", "index.php?r=front/services&locationId="
+				+ model.id.toString());
+		
+		a.innerHTML = model.street + "<br /> " + model.city + " " + model.state
+				+ "<br />";
+		p.appendChild(a);
 
 		setVisible(loading, false);
 		setVisible(header, true);
@@ -79,12 +83,10 @@
 	}
 
 	function setRandomFooterAddress(locations) {
-		var location = locations[Math.floor(Math.random() * locations.length)];
-		console.debug(location.id);
-		setFooterAddress(location);
+		var random = locations[Math.floor(Math.random() * locations.length)];
+		setFooterAddress(random);
 	}
 	function main(locations){
-		console.debug(locations);
 		activate();
 		addLocations(locations);
 		setRandomFooterAddress(locations);

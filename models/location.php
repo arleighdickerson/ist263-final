@@ -14,7 +14,7 @@ class Location extends Model {
 	}
 	public function flatten() {
 		return array_merge ( ( array ) $this, [ 
-				'items' => $this->getItems () 
+				'items' => $this->getItems ()
 		] );
 	}
 }

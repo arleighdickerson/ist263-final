@@ -12,7 +12,7 @@
 <!-- library styles -->
 <link href="css/bootstrap.css" rel="stylesheet" />
 <link href="css/font-awesome.css" rel="stylesheet" />
-<link href="css/solid.css" rel="stylesheet" />
+
 <!-- library scripts -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -25,7 +25,6 @@
 <link rel="shortcut icon" href="img/favicon.ico" />
 
 <!-- my scripts -->
-<script>_.mixin(_.str.exports());</script>
 <script src="js/ajaxutil.js"></script>
 <script src="js/topbar-activate.js"></script>
 
